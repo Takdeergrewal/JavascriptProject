@@ -1,0 +1,13 @@
+articles.hbs
+
+ <h1>Articles</h1>
+    <a href="/add-article">/add-article</a>
+  
+{{#each data}}
+<li> 
+  <a href="/articles/{{this.articleId}}">{{this.title}}</a>
+  <a href="/edit-article/{{this.articleId}}">Edit</a>
+   <a href="/delete-article/{{this.articleId}}">Delete</a>
+</li>
+{{/each}}
+<a href="/">Homepage</a>

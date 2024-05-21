@@ -1,0 +1,11 @@
+ <h1>Delete Article</h1>
+    <p>Article ID: {{{article.articleId}}}</p>
+    <p>TITLE: {{{article.title}}}</p>
+    <p>CONTENT: {{{article.content}}}</p>
+
+    <form action="/article/delete" method="post">
+      <input type="hidden" name="articleId" value="{{{article.articleId}}}">
+      <button type="submit" name="AreYouSure" value="'Yes">Yes</button>
+    </form>
+
+    <a href="/">Homepage</a>
